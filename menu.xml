@@ -1,0 +1,142 @@
+<menu>
+	<category>
+		<categoryname>Pizzas</categoryname>
+		<categorydesc>SM/LG</categorydesc>
+		<menuitem>Tomato & Cheese</menuitem>
+			<smprice>$5.50</smprice>
+			<lgprice>$9.75</lgprice>
+		<menuitem>Onions</menuitem>
+			<smprice>$6.85</smprice>
+			<lgprice>$10.85</lgprice>
+		<menuitem>Peppers</menuitem>
+			<smprice>$6.85</smprice>
+			<lgprice>$10.85</lgprice>
+		<menuitem>Broccoli</menuitem>
+			<smprice>$6.85</smprice>
+			<lgprice>$10.85</lgprice>
+		<menuitem>Fresh Garlic</menuitem>
+			<smprice>$6.85</smprice>
+			<lgprice>$10.85</lgprice>
+	</category>
+	<category>
+		<categoryname>Specialty Pizzas</categoryname>
+		<categorydesc>$9.80 Sm / $15.80 Lg</categorydesc>
+		<menuitem>Three Aces Special</menuitem>
+			<smprice>$9.80</smprice>
+			<lgprice>$15.80</lgprice>
+		<menuitem>Mediterranean</menuitem>
+			<itemdesc>Sliced Tomatoes,Olives,Spinach,Fresh Garlic, Mozzarella & Feta Cheese</itemdesc>
+			<smprice>$9.80</smprice>
+			<lgprice>$15.80</lgprice>
+		<menuitem>Vegetarian</menuitem>
+			<itemdesc>Sliced Tomatoes, Onion, Peppers, Mushrooms, Broccoli, Mozzarella</itemdesc>
+			<smprice>$9.80</smprice>
+			<lgprice>$15.80</lgprice>
+		<menuitem>Meat Lovers</menuitem>
+			<itemdesc>Pepperoni, Hamburg, Sausage & Bacon</itemdesc>
+			<smprice>$9.80</smprice>
+			<lgprice>$15.80</lgprice>
+		<menuitem></menuitem>
+	</category>
+	<category>
+		<categoryname>Specialty Dinners</cateogryname>
+		<menuitem>Chicken Wing Dinner</menuitem>
+			<lgprice>$7.25</lgprice>
+		<menuitem>Gyro Plate</menuitem>
+			<lgprice>$7.25</lgprice>
+		<menuitem>Chicken Finger Plate</menuitem>
+			<lgprice>$7.25</lgprice>
+	</category>
+	<category>
+		<categoryname>Side Orders</categoryname>
+		<menuitem>Onion Rings</menuitem>
+			<smprice>$2.60</smprice>
+			<lgprice>$2.95</lgprice>
+		<menuitem>French Fries</menuitem>
+			<smprice>$2.25</smprice>
+			<lgprice>$2.65</lgprice>
+		<menuitem>Spicy Fries</menuitem>
+			<smprice>$2.60</smprice>
+			<lgprice>$2.95</lgprice>
+	</category>
+	<category>
+		<categoryname>Salads</categoryname>
+		<categorydesc>SM/LG</categoryname>
+		<menuitem>Garden</menuitem>
+			<smprice>$3.50</smprice>
+			<lgprice>$4.50</lgprice>
+		<menuitem>Greek</menuitem>
+			<smprice>$4.50</smprice>
+			<lgprice>$5.50</lgprice>
+		<menuitem>Antipasto</menuitem>
+			<smprice>$4.50</smprice>
+			<lgprice>$5.50</lgprice>
+	</category>
+	<category>
+		<categoryname>Spaghetti or Ziti</categoryname>
+		<menuitem>With Sauce</menuitem>
+			<lgprice>$5.40</lgprice>
+		<menuitem>With Sausage</menuitem>
+			<lgprice>$6.45</lgprice>
+		<menuitem>With Meat Ball</menuitem>
+			<lgprice>$6.45</lgprice>
+		<menuitem>With Veal</menuitem>
+			<lgprice>$6.45</lgprice>
+	</category>
+	<category>
+		<categoryname>Lasagna, Ravioli, or Manicotti</categoryname>
+		<categorydesc>All Pasta Dinners Served with Garlic Bread and Salad</categorydesc>
+		<menuitem>With Sauce</menuitem>
+			<lgprice>$6.25</lgprice>
+		<menuitem>With Sausage</menuitem>
+			<lgprice>$7.25</lgprice>
+		<menuitem>With Meat Ball</menuitem>
+			<lgprice>$7.25</lgprice>
+		<menuitem>With Veal</menuitem>
+			<lgprice>$7.25</lgprice>
+	</category>
+	<category>
+		<categoryname>Homemade Calzones</categoryname>
+		<categorydesc>$7.35 - Large</categorydesc>
+		<menuitem>Vegetarian</menuitem>
+			<lgprice>$7.35</lgprice>
+		<menuitem>Sausage</menuitem>
+			<lgprice>$7.35</lgprice>
+		<menuitem>Ham & Cheese</menuitem>
+			<lgprice>$7.35</lgprice>
+		<menuitem>Chicken Cutlet</menuitem>
+			<lgprice>$7.35</lgprice>
+	</category>
+	<category>
+		<categoryname>Wraps</categoryname>
+		<categorydesc>All Wraps $4.95</categorydesc>
+		<menuitem>Turkey Club Wrap</menuitem>
+			<itemdesc>Turkey, Cheese, Lettuce, Tomato, Onion, Mayo</itemdesc>
+			<lgprice>$4.95</lgprice>
+		<menuitem>Chicken Cobb</menuitem>
+			<itemdesc>Grilled Chicken, Bacon, Cheese, Lettuce, Tomato, Onion, Honey Mustard</itemdesc>
+			<lgprice>$4.95</lgprice>
+		<menuitem>Greek Supreme</menuitem>
+			<itemdesc>Feta Cheese, Black Olives, Lettuce, Tomato, Onion, Greek Dressing</itemdesc>
+			<lgprice>$4.95</lgprice>
+		<menuitem>Crispy Chicken</menuitem>
+			<itemdesc>Chicken Fingers, Lettuce, Tomato, Onion, Honey Mustard</itemdesc>
+			<lgprice>$4.95</lgprice>
+	</category>
+	<category>
+		<categoryname>Grinders</categoryname>
+		<categorydesc>SM/LG</categorydesc>
+		<menuitem>Meatless</menuitem>
+			<smprice>$4.50</smprice>
+			<lgprice>$4.95</lgprice>
+		<menuitem>Hamburger</menuitem>
+			<smprice>$4.50</smprice>
+			<lgprice>$4.95</lgprice>
+		<menuitem>Cheeseburger</menuitem>
+			<smprice>$4.75</smprice>
+			<lgprice>$5.75</lgprice>
+	</category>
+</menu>
+
+
+	
