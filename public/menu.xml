@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <menu>
 	<category>
 		<categoryname>Pizzas</categoryname>
 		<categorydesc>SM/LG</categorydesc>
-		<menuitem>Tomato & Cheese</menuitem>
+		<menuitem>Tomato &amp; Cheese</menuitem>
 			<smprice>$5.50</smprice>
 			<lgprice>$9.75</lgprice>
 		<menuitem>Onions</menuitem>
@@ -25,7 +26,7 @@
 			<smprice>$9.80</smprice>
 			<lgprice>$15.80</lgprice>
 		<menuitem>Mediterranean</menuitem>
-			<itemdesc>Sliced Tomatoes,Olives,Spinach,Fresh Garlic, Mozzarella & Feta Cheese</itemdesc>
+			<itemdesc>Sliced Tomatoes,Olives,Spinach,Fresh Garlic, Mozzarella &amp; Feta Cheese</itemdesc>
 			<smprice>$9.80</smprice>
 			<lgprice>$15.80</lgprice>
 		<menuitem>Vegetarian</menuitem>
@@ -33,13 +34,13 @@
 			<smprice>$9.80</smprice>
 			<lgprice>$15.80</lgprice>
 		<menuitem>Meat Lovers</menuitem>
-			<itemdesc>Pepperoni, Hamburg, Sausage & Bacon</itemdesc>
+			<itemdesc>Pepperoni, Hamburg, Sausage &amp; Bacon</itemdesc>
 			<smprice>$9.80</smprice>
 			<lgprice>$15.80</lgprice>
 		<menuitem></menuitem>
 	</category>
 	<category>
-		<categoryname>Specialty Dinners</cateogryname>
+		<categoryname>Specialty Dinners</categoryname>
 		<menuitem>Chicken Wing Dinner</menuitem>
 			<lgprice>$7.25</lgprice>
 		<menuitem>Gyro Plate</menuitem>
@@ -61,7 +62,7 @@
 	</category>
 	<category>
 		<categoryname>Salads</categoryname>
-		<categorydesc>SM/LG</categoryname>
+		<categorydesc>SM/LG</categorydesc>
 		<menuitem>Garden</menuitem>
 			<smprice>$3.50</smprice>
 			<lgprice>$4.50</lgprice>
@@ -102,7 +103,7 @@
 			<lgprice>$7.35</lgprice>
 		<menuitem>Sausage</menuitem>
 			<lgprice>$7.35</lgprice>
-		<menuitem>Ham & Cheese</menuitem>
+		<menuitem>Ham &amp; Cheese</menuitem>
 			<lgprice>$7.35</lgprice>
 		<menuitem>Chicken Cutlet</menuitem>
 			<lgprice>$7.35</lgprice>

@@ -21,7 +21,8 @@
     </head>
     
     <body>
-        <!-- Brand and toggle get grouped for better mobile display -->
+       
+        <!-- used from bootstrap.  getbootstrap.com -->
         <div class="navbar navbar-default">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -36,13 +37,23 @@
                 Menu <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
+                <?php
+                //xml loader script from http://www.w3schools.com/php/php_xml_simplexml_read.asp
+                
+                $xml=simplexml_load_file("menu.xml") or die("Error: Cannot create object");
+                //print_r($xml);
+                foreach($xml->children() as $categories) { 
+                    echo "<li><a href=";
+                    echo $categories->categoryname . "php" . ">";
+                    echo $categories->categoryname ;
+                    echo "</a></li>" ;
+                } 
+                ?>
+                
                 <li><a href="#">Something else here</a></li>
             </ul>
             </div>
         </div>
-        
    
     </body>
     
