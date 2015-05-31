@@ -9,11 +9,12 @@
     session_start();
     
     // if form was actually submitted, check for error
-     if (isset($_POST["action"]))
+    /* if (isset($_POST["action"]))
      {
         if (empty($_POST["name"]) || empty($_POST["gender"]) || empty($_POST["dorm"])) 
             $error = true;
      }
+     */
 <?
 
 <!DOCTYPE html>
@@ -61,16 +62,20 @@
                 foreach($xml->children() as $categories) { 
                     echo "<li><a href=";
                     //link
-                    echo "menu.php?categoryname=" . $categories->categoryname . "&categorydesc=" . $categories->categorydesc . ">"; //calls menu.php page passing categoryname var as GET
+                    echo "menu.php?category=" . $categories->categoryname . ">"; //calls menu.php page passing categoryname var as GET
                     //menu caption
                     echo $categories->categoryname;
                     //ends list element
                     echo "</a></li>" ;
-                } 
-                ?>
+                } ?>
             </ul>
             <button type="button" class="btn btn-default btn-lg">Your Order</button>
             </div>
+        </div>
+        <div class="page-header">
+            <h1><?php echo $_GET["categoryname"]?></h1>
+            <p></p>
+            <h1><small><?php echo $_GET["categorydesc"]?></small></h1>
         </div>
    
     </body>
