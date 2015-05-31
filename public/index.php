@@ -30,10 +30,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Three Aces Pizza</a>
+            <a class="navbar-brand" href="index.php">Three Aces Pizza</a>
             <!-- Small button group -->
             <div class="btn-group">
-            <button class="btn btn-default btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-default btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                 Menu <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
@@ -41,17 +41,19 @@
                 //xml loader script from http://www.w3schools.com/php/php_xml_simplexml_read.asp
                 
                 $xml=simplexml_load_file("menu.xml") or die("Error: Cannot create object");
-                //print_r($xml);
+                //list element formatting  <li><a href="#">Something else here</a></li>
                 foreach($xml->children() as $categories) { 
                     echo "<li><a href=";
-                    echo $categories->categoryname . "php" . ">";
+                    //link
+                    echo "menu.php?category=" . $categories->categoryname . ">"; //calls menu.php page passing categoryname var as GET
+                    //menu caption
                     echo $categories->categoryname ;
+                    //ends list element
                     echo "</a></li>" ;
                 } 
                 ?>
-                
-                <li><a href="#">Something else here</a></li>
             </ul>
+            <button type="button" class="btn btn-default btn-lg">Your Order</button>
             </div>
         </div>
    
