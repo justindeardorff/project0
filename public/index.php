@@ -58,7 +58,8 @@
                 
                 $xml=simplexml_load_file("menu.xml") or die("Error: Cannot create object");
                 //list element formatting  <li><a href="#">Something else here</a></li>
-                foreach($xml->children() as $categories) { 
+                foreach($xml->children() as $categories) 
+                { 
                     echo "<li><a href=";
                     //link
                     echo "menu.php?categoryname=" . $categories->categoryname . "&categorydesc=" . $categories->categorydesc . ">"; //calls menu.php page passing categoryname var as GET
