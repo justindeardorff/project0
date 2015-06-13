@@ -53,10 +53,10 @@
                 Menu <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu">
-                <?php
+                 <?php
                 //xml loader script from http://www.w3schools.com/php/php_xml_simplexml_read.asp
                 
-                $xml=simplexml_load_file("menu.xml") or die("Error: Cannot create object");
+                $xml=simplexml_load_file("../includes/menu.xml") or die("Error: Cannot create object");
                 //list element formatting  <li><a href="#">Something else here</a></li>
                 foreach($xml->children() as $categories) 
                 { 
