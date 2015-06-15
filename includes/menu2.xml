@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<categories>
+		<category>
+			<categoryname>Pizzas &amp; Specialty Pizzas</categoryname>
+			<categorydesc>Small and Large, add extra cheese to any Pizza for $1.25</categorydesc>
+			<items>
+				<item>
+					<itemname>Tomato &amp; Cheese</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$5.50</price>
+						<price size="large">$9.75</price>
+					</prices>
+				</item>	
+				<item>	
+					<itemname>Onions</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$6.85</price>
+						<price size="large">$10.85</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>Peppers</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$6.85</price>
+						<price size="large">$10.85</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Broccoli</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$6.85</price>
+						<price size="large">$10.85</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Fresh Garlic</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$6.85</price>
+						<price size="large">$10.85</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Three Aces Special</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$9.80</price>
+						<price size="large">$15.80</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Mediterranean</itemname>
+					<itemdesc>Sliced Tomatoes,Olives,Spinach,Fresh Garlic, Mozzarella &amp; Feta Cheese</itemdesc>
+					<prices>
+						<price size="small">$9.80</price>
+						<price size="large">$15.80</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Vegetarian</itemname>
+					<itemdesc>Sliced Tomatoes, Onion, Peppers, Mushrooms, Broccoli, Mozzarella</itemdesc>
+					<prices>
+						<price size="small">$9.80</price>
+						<price size="large">$15.80</price>
+					</prices>
+				</item>
+			</items>		
+		</category>
+		<category>
+			<categoryname>Specialty Dinners</categoryname>
+			<categorydesc></categorydesc>
+			<items>
+				<item>
+					<itemname>Chicken Wing Dinner</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$7.25</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>Chicken Finger Plate</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$7.25</price>
+					</prices>
+				</item>	
+				<item>
+					<itemname>Gyro Plate</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$7.25</price>
+					</prices>
+				</item>	
+			</items>
+		</category>
+		<category>
+			<categoryname>Side Orders</categoryname>
+			<categorydesc></categorydesc>
+			<items>	
+				<item>		
+					<itemname>Onion Rings</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$2.60</price>
+						<price size="large">$2.95</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>French Fries</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$2.60</price>
+						<price size="large">$2.95</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Spicy Fries</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$2.60</price>
+						<price size="large">$2.95</price>
+					</prices>
+				</item>
+			</items>
+		</category>
+		<category>
+			<categoryname>Salads</categoryname>
+			<categorydesc>SM/LG</categorydesc>
+			<items>
+				<item>		
+					<itemname>Garden</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$3.50</price>
+						<price size="large">$4.50</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Greek</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$4.50</price>
+						<price size="large">$5.50</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Antipasto</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$4.50</price>
+						<price size="large">$5.50</price>
+					</prices>
+				</item>
+			</items>
+		</category>	
+		<category>
+			<categoryname>Spaghetti or Ziti</categoryname>
+			<categorydesc>specify pasta type in order comments</categorydesc>
+			<items>
+				<item>
+					<itemname>With Sauce</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$5.40</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>With Sausage</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$6.45</price>
+					</prices>
+				</item>	
+				<item>
+					<itemname>With Meatball</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$6.45</price>
+					</prices>
+				</item>	
+			</items>
+		</category>
+		<category>
+			<categoryname>Lasagna, Ravioli, or Manicotti</categoryname>
+			<categorydesc>All Pasta Dinners Served with Garlic Bread and Salad. Specify pasta type in order comments</categorydesc>
+			<items>
+				<item>
+					<itemname>With Sauce</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$5.40</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>With Sausage</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$6.45</price>
+					</prices>
+				</item>	
+				<item>
+					<itemname>With Meatball</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$6.45</price>
+					</prices>
+				</item>	
+			</items>
+		</category>
+		<category>
+			<categoryname>Homemade Calzones</categoryname>
+			<categorydesc>All calzones $7.35</categorydesc>
+			<items>
+				<item>
+					<itemname>Vegetarian</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$7.35</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>Sausage</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$7.35</price>
+					</prices>
+				</item>	
+				<item>
+					<itemname>Ham &amp; Cheese</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price>$7.35</price>
+					</prices>
+				</item>	
+			</items>
+		</category>
+		<category>
+			<categoryname>Wraps</categoryname>
+			<categorydesc>All Wraps $4.95</categorydesc>
+			<items>
+				<item>
+					<itemname>Turkey Club</itemname>
+					<itemdesc>Turkey, Cheese, Lettuce, Tomato, Onion, Mayo</itemdesc>
+					<prices>
+						<price>$4.95</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>Chicken Cobb</itemname>
+					<itemdesc>Grilled Chicken, Bacon, Cheese, Lettuce, Tomato, Onion, Honey Mustard</itemdesc>
+					<prices>
+						<price>$4.95</price>
+					</prices>
+				</item>	
+				<item>
+					<itemname>Greek Supreme</itemname>
+					<itemdesc>Feta Cheese, Black Olives, Lettuce, Tomato, Onion, Greek Dressing<</itemdesc>
+					<prices>
+						<price>$4.95</price>
+					</prices>
+				</item>
+				<item>
+					<itemname>Crispy Chicken</itemname>
+					<itemdesc>Chicken Fingers, Lettuce, Tomato, Onion, Honey Mustard</itemdesc>
+					<prices>
+						<price>$4.95</price>
+					</prices>
+				</item>		
+			</items>
+		</category>
+		<category>
+			<categoryname>Grinders</categoryname>
+			<categorydesc>SM/LG</categorydesc>
+			<items>
+				<item>		
+					<itemname>Meatless</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$4.50</price>
+						<price size="large">$4.95</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Hamburger</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$4.50</price>
+						<price size="large">$4.95</price>
+					</prices>
+				</item>
+				<item>		
+					<itemname>Cheeseburger</itemname>
+					<itemdesc></itemdesc>
+					<prices>
+						<price size="small">$4.50</price>
+						<price size="large">$4.95</price>
+					</prices>
+				</item>
+			</items>
+		</category>	
+	</categories>
+</menu>
+	
