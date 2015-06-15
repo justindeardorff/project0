@@ -20,7 +20,7 @@
     }
     
     //load xml
-    $xml=simplexml_load_file("../includes/menu.xml") or die("Error: Cannot create object");
+    $xml=simplexml_load_file("../includes/menu2.xml") or die("Error: Cannot create object");
     
     //render menuview template to display selected menu item
     render("menuview.php", ["xml"=>$xml, "catname"=>$catname, "catdesc"=>$catdesc]);
