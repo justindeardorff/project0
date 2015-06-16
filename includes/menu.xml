@@ -4,18 +4,23 @@
 		<categoryname>Pizzas</categoryname>
 		    <categorydesc>SM/LG</categorydesc>
 		    <menuitem>Tomato &amp; Cheese</menuitem>
+		        <itemdesc></itemdesc>
 			    <smprice>$5.50</smprice>
 			    <lgprice>$9.75</lgprice>
 		    <menuitem>Onions</menuitem>
+		        <itemdesc></itemdesc>
 			    <smprice>$6.85</smprice>
 			    <lgprice>$10.85</lgprice>
 		    <menuitem>Peppers</menuitem>
+		        <itemdesc></itemdesc>
 			    <smprice>$6.85</smprice>
 			    <lgprice>$10.85</lgprice>
 		    <menuitem>Broccoli</menuitem>
+		        <itemdesc></itemdesc>
 			    <smprice>$6.85</smprice>
 			    <lgprice>$10.85</lgprice>
 		    <menuitem>Fresh Garlic</menuitem>
+		        <itemdesc></itemdesc>
 			    <smprice>$6.85</smprice>
 			    <lgprice>$10.85</lgprice>
 	</category>
@@ -23,6 +28,7 @@
 		<categoryname>Specialty Pizzas</categoryname>
 		<categorydesc>$9.80 Sm / $15.80 Lg</categorydesc>
 		<menuitem>Three Aces Special</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$9.80</smprice>
 			<lgprice>$15.80</lgprice>
 		<menuitem>Mediterranean</menuitem>
@@ -43,22 +49,28 @@
 		<categoryname>Specialty Dinners</categoryname>
 		<categorydesc></categorydesc>
 		<menuitem>Chicken Wing Dinner</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.25</lgprice>
 		<menuitem>Gyro Plate</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.25</lgprice>
 		<menuitem>Chicken Finger Plate</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.25</lgprice>
 	</category>
 	<category>
 		<categoryname>Side Orders</categoryname>
 		<categorydesc></categorydesc>
 		<menuitem>Onion Rings</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$2.60</smprice>
 			<lgprice>$2.95</lgprice>
 		<menuitem>French Fries</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$2.25</smprice>
 			<lgprice>$2.65</lgprice>
 		<menuitem>Spicy Fries</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$2.60</smprice>
 			<lgprice>$2.95</lgprice>
 	</category>
@@ -66,12 +78,15 @@
 		<categoryname>Salads</categoryname>
 		<categorydesc>SM/LG</categorydesc>
 		<menuitem>Garden</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$3.50</smprice>
 			<lgprice>$4.50</lgprice>
 		<menuitem>Greek</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$4.50</smprice>
 			<lgprice>$5.50</lgprice>
 		<menuitem>Antipasto</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$4.50</smprice>
 			<lgprice>$5.50</lgprice>
 	</category>
@@ -79,12 +94,16 @@
 		<categoryname>Spaghetti or Ziti</categoryname>
 		<categorydesc></categorydesc>
 		<menuitem>With Sauce</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$5.40</lgprice>
 		<menuitem>With Sausage</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$6.45</lgprice>
 		<menuitem>With Meat Ball</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$6.45</lgprice>
 		<menuitem>With Veal</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$6.45</lgprice>
 	</category>
 	<category>
@@ -92,24 +111,32 @@
 		<categorydesc></categorydesc>
 		<categorydesc>All Pasta Dinners Served with Garlic Bread and Salad</categorydesc>
 		<menuitem>With Sauce</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$6.25</lgprice>
 		<menuitem>With Sausage</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.25</lgprice>
 		<menuitem>With Meat Ball</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.25</lgprice>
 		<menuitem>With Veal</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.25</lgprice>
 	</category>
 	<category>
 		<categoryname>Homemade Calzones</categoryname>
 		<categorydesc>$7.35 - Large</categorydesc>
 		<menuitem>Vegetarian</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.35</lgprice>
 		<menuitem>Sausage</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.35</lgprice>
 		<menuitem>Ham &amp; Cheese</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.35</lgprice>
 		<menuitem>Chicken Cutlet</menuitem>
+		    <itemdesc></itemdesc>
 			<lgprice>$7.35</lgprice>
 	</category>
 	<category>
@@ -132,12 +159,15 @@
 		<categoryname>Grinders</categoryname>
 		<categorydesc>SM/LG</categorydesc>
 		<menuitem>Meatless</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$4.50</smprice>
 			<lgprice>$4.95</lgprice>
 		<menuitem>Hamburger</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$4.50</smprice>
 			<lgprice>$4.95</lgprice>
 		<menuitem>Cheeseburger</menuitem>
+		    <itemdesc></itemdesc>
 			<smprice>$4.75</smprice>
 			<lgprice>$5.75</lgprice>
 	</category>
