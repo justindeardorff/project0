@@ -17,12 +17,21 @@
         //store get vars locally for passing
         $catname = $_GET["categoryname"];
         $catdesc = $_GET["categorydesc"];
+        
+        if($catname=="Pizzas & Specialty Pizzas")
+        {
+            $extracheese=1;
+        }
+        else
+        {
+            $extracheese=0;
+        }
     }
     
     //load xml
     $xml=simplexml_load_file("../includes/menu2.xml") or die("Error: Cannot create object");
     
     //render menuview template to display selected menu item
-    render("menuview.php", ["xml"=>$xml, "catname"=>$catname, "catdesc"=>$catdesc]);
+    render("menuview.php", ["xml"=>$xml, "catname"=>$catname, "catdesc"=>$catdesc, "extracheese"=>$extracheese]);
 ?>
 
