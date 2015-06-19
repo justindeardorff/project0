@@ -1,5 +1,5 @@
-<div class="panel panel-default">
-    <div class="panel-heading"><h1><u><?php echo $catname?></u></h1><p></p><h3><i><?php echo $catdesc?></i></h3></div>
+<div name="body">
+    <div class="page-header"><h2><u><?php echo $catname?></u></h2><p></p><small><?php echo $catdesc?></small></div>
     <p></p>
     <div>
         
@@ -21,14 +21,31 @@
                             {
                                if($price["size"]=='')
                                {
-                                   echo $price;
+                                   echo $price;?>
+                                   <form action="order.php" method="post">
+                                   <fieldset>
+                                        <div class="input-group input-group-sm">
+                                           <input type="number" class="form-control" name="qty" value="1" min="1">
+                                           <button type="submit" class="btn btn-sm">Add To Order</button>
+                                        </div>   
+                                   </fieldset>
+                               </form><?php
                                    echo ("<p>");
                                }
                                else
                                {
-                                   echo $price["size"] . " - " . $price;
+                                   echo $price["size"] . " - " . $price;?>
+                                   <form action="order.php" method="post">
+                                   <fieldset>
+                                        <div class="input-group input-group-sm">
+                                           <input type="number" class="form-control" name="qty" value="1" min="1">
+                                           <button type="submit" class="btn btn-sm">Add To Order</button>
+                                        </div>   
+                                   </fieldset>
+                               </form><?php
                                    echo ("<p>");
                                }
+                               
                             }
                             echo ("<p>");
                        }
