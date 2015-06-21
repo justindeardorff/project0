@@ -33,7 +33,12 @@
     {
          //strips leading dollar sign and non-numeric values and returns a float
          //courtesy of Steve at otopilo.net and http://php.net/manual/en/function.floatval.php#84590
-         return $output = floatval(ereg_replace("[^-0-9\.]","",$price)); 
+         return $output = floatval(preg_match("[^-0-9\.]","",$price)); 
+    }
+    
+    function displaycart($cart)
+    {
+        //write some code to iterate through array and print cart items to screen
     }
     
 
