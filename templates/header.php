@@ -5,6 +5,9 @@
     *  Justin Deardorff
     *  Main entry point for site, directs users to menu items or checkout
     */
+    
+    require_once("../includes/functions.php");
+    
 ?>
 <!DOCTYPE html>
  
@@ -51,7 +54,7 @@
                     { 
                         echo "<li><a href=";
                         //link
-                        echo "menu.php?categoryname=" . urlencode($categories->categoryname) . "&categorydesc=" . urlencode($categories->categorydesc) . ">"; //calls menu.php page passing categoryname var as GET
+                        echo "index.php?categoryname=" . urlencode($categories->categoryname) . "&categorydesc=" . urlencode($categories->categorydesc) . ">"; //calls menu.php page passing categoryname var as GET
                         //menu caption
                         echo $categories->categoryname;
                         //ends list element
