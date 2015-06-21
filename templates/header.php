@@ -1,12 +1,11 @@
-<? session_start();
+<?php session_start();
     /*
     *  Three Aces Pizza Site
     *  CS75 Project 0
     *  Justin Deardorff
     *  Main entry point for site, directs users to menu items or checkout
     */
-<?
-
+?>
 <!DOCTYPE html>
  
 <html>
@@ -27,8 +26,7 @@
         <script src="/js/scripts.js"></script>
     </head>
     
-    <body>
-       
+    <body>   
         <!-- used from bootstrap.  www.getbootstrap.com -->
         <div class="navbar navbar-default">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -64,6 +62,5 @@
                 <button type="button" class="btn btn-default navbar-btn">Your Order</button>
             </div>
         </div>
-    </body>
     
-</html>    
+      

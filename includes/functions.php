@@ -28,5 +28,13 @@
             trigger_error("Invalid template: $template", E_USER_ERROR);
         }
     }
+    
+    function getprice($price)
+    {
+         //strips leading dollar sign and non-numeric values and returns a float
+         //courtesy of Steve at otopilo.net and http://php.net/manual/en/function.floatval.php#84590
+         return $output = floatval(ereg_replace("[^-0-9\.]","",$price)); 
+    }
+    
 
 ?>

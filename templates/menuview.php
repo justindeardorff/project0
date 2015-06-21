@@ -1,7 +1,7 @@
-<div name="body">
+<div>
     <div class="page-header"><h2><u><?php echo $catname?></u></h2><p></p><small><?php echo $catdesc?></small></div>
     <p></p>
-    <div class="">
+    <div class="default">
         
                 <?php
 
@@ -23,36 +23,94 @@
                             
                             foreach($prices->price as $price)
                             {
-      
-                               if($extracheese==0)
+                                //if it's a non-pizza order
+                               if($extracheese==0)  
                                {
-                                   //put form for non-pizza orders here
+                                   //check to see if it's a pasta order
+                                   if($catname=="Spaghetti or Ziti" OR $catname=="Lasagna, Ravioli, or Manicotti")
+                                   {
+                                        ?>  <!-display order form with sauce type->
+                                        <form class="form-inline" role="form" action="order.php" method="post">
+                                            <div class="form-group">
+                                                  <!--put item and price here-->
+                                                  <?php
+                                                   if($price["size"]=='')
+                                                   {
+                                                       echo " " . $price . " ";
+                                                   }
+                                                   else
+                                                   {
+                                                       echo strtoupper($price["size"]);
+                                                       echo ("<br>");
+                                                       echo $price;
+                                                   }?>
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="number"  name="qty" value="1" min="1">
+                                           </div>
+                                           <select class="form-control" name="sauce">
+                                              <option>Red Sauce</option>
+                                              <option>White Sauce</option>
+                                           </select>
+                                           <div class="form-group">
+                                                <input type="hidden" name=item value="<?php echo $menuitems->itemname;?>">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="hidden" name=category value="<?php echo $catname;?>">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="hidden" name=size value="<?php echo ($price["size"]);?>">
+                                           </div> 
+                                           <div class="form-group">
+                                                <input type="hidden" name=price value="<?php echo $price;?>">
+                                           </div>
+                                           <button type="submit" class="btn btn-sm">Submit</button>
+                                        </form>
+                                      <?php  
+                                   }
+                                   else
+                                   {    //put form for non-pizza, non-pasta orders here
                                    ?>
-                                   <form class="form-inline" role="form" action="order.php" method="post">
-                                       <div class="form-group">
-                                              <!--put item and price here-->
-                                              <?php
-                                               if($price["size"]=='')
-                                               {
-                                                   echo $price;
-                                               }
-                                               else
-                                               {
-                                                   echo strtoupper($price["size"]);
-                                                   echo ("<br>");
-                                                   echo $price;
-                                               }?>
-                                       </div>
-                                       <div class="form-group">
-                                            <input type="number" class="form-control" width="40" name="qty" value="1" min="1">
-                                       </div>
-                                       <div class="form-group">     
-                                            <button type="submit" class="btn btn-sm">Submit</button>
-                                      </div>  
-                                  </form>
-                                <?php
-                                }
-                                else
+                                   <!-display order form with sauce type->
+                                        <form class="form-inline" role="form" action="order.php" method="post">
+                                            <div class="form-group">
+                                                  <!--put item and price here-->
+                                                  <?php
+                                                   if($price["size"]=='')
+                                                   {
+                                                       echo " " . $price . " ";
+                                                   }
+                                                   else
+                                                   {
+                                                       echo strtoupper($price["size"]);
+                                                       echo ("<br>");
+                                                       echo $price;
+                                                   }?>
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="number" name="qty" value="1" min="1">
+                                           </div>
+                                           <div class="form-group">         
+                                                <input type="hidden" name="sauce" value="0">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="hidden" name=category value="<?php echo $catname;?>">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="hidden" name=item value="<?php echo $menuitems->itemname;?>">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="hidden" name=size value="<?php echo ($price["size"]);?>">
+                                           </div>     
+                                           <div class="form-group">
+                                                <input type="hidden" name=price value="<?php echo $price;?>">
+                                           </div>
+                                           <button type="submit" class="btn btn-sm">Submit</button>
+                                        </form>
+                                    <?php
+                                    }
+                                }    
+                                else //this the area for pizza orders (shows extra cheese option)
                                 { 
                                     ?>
            
@@ -72,14 +130,27 @@
                                                }?>
                                        </div>
                                        <div class="form-group">
-                                            <input type="number" class="form-control" width="40" name="qty" value="1" min="1">
+                                            <input type="number" name="qty" value="1" min="1">
                                        </div>
                                        <div class="form-group">         
-                                            <label><input type="checkbox" name="xcheese" value="1"> 2x Cheese</label>
+                                            <label><input type="checkbox" name="xcheese"> 2x Cheese</label>
                                        </div>
-                                       <div class="form-group">     
-                                            <button type="submit" class="btn btn-sm">Submit</button>
-                                      </div>  
+                                       <div class="form-group">         
+                                            <input type="hidden" name="sauce" value="0">
+                                       </div>
+                                       <div class="form-group">
+                                                <input type="hidden" name=category value="<?php echo $catname;?>">
+                                       </div>
+                                       <div class="form-group">
+                                            <input type="hidden" name=item value="<?php echo $menuitems->itemname;?>">
+                                       </div>
+                                       <div class="form-group">
+                                            <input type="hidden" name=size value="<?php echo ($price["size"]);?>">
+                                       </div>     
+                                       <div class="form-group">
+                                                <input type="hidden" name=price value="<?php echo $price;?>">
+                                       </div>
+                                       <button type="submit" class="btn btn-sm">Submit</button>
                                   </form>
     
                                    <?php
