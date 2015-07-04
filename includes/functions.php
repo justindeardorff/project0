@@ -43,22 +43,20 @@
         session_destroy();
     }
     
-    function displaycart($cart)
+    function displaycart()
     {
-        //write some code to iterate through array and print cart items to screen
-        //print_r($cart);
+    
+        $cart=$_SESSION["cart"];
+        
+        //counter used to uniquely identify cart items for updates or 
         $itemcount=0;
-            
-            //I will need to implement a form control in each qty box to update the qty
-            //I will need to implement a form control in each remove item box to completely
-            //remove the item from the cart 
+
            ?> 
             
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>Category</th>
-                    <th>Item Name</th>
+                    <th>Category/Item</th>
                     <th>Qty</th>
                     <th>Price</th>
                     <th>Subtotal</th>
@@ -69,25 +67,38 @@
          foreach($cart as $item)
         {
             
-            $itemcount++;?>  
+            ?>  
             <tr>
-                <td><?php echo($item["category"]);?></td>
-                <td><?php echo($item["itemname"]);?></td>
+                <td><?php echo($item["category"]);?>
+                    <?php echo ("<br>"); ?>
+                    <?php echo("<b>".$item["itemname"]."</b>");?>
+                </td>    
                 <td><form class="form" role="form" action="order.php" method="post">
                         <div class="form-group">
                             <input type="number"  name="qty" value="<?php echo ($item["qty"]);?>" min="1">
+                            <input type="hidden"  name="cartaction" value="update">
+                            <input type="hidden"  name="itemnumber" value="<?php echo ($itemcount);?>">
+                            
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-sm">Update</button>
+                        <button type="submit" class="btn btn-sm">Update Qty</button>
                      </form>    
                 </td>
-                <td><?php echo ($item["price"])?></td>
-                <td><?php echo ($item["subtotal"])?></td>
-                <td>Magic Button</td>      
+                <td><?php echo ("$".number_format($item["price"],2))?></td>
+                <td><?php echo ("$".number_format($item["subtotal"],2))?></td>
+                <td><form class="form" role="form" action="order.php" method="post">
+                        <div class="form-group">
+                            <input type="hidden"  name="cartaction" value="remove">
+                            <input type="hidden"  name="itemnumber" value="<?php echo ($itemcount);?>">
+                            <button type="submit" class="btn btn-sm">Remove Item</button>
+                        </div>
+                     </form>   
+                </td>      
              <tr>        
-          <?php
+          <?php $itemcount++;
 	     } ?>  
            </table>
+           <a class="btn btn-default navbar-btn" href="destroy.php">Clear Order</a>
            <?php
 	}?>
     

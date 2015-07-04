@@ -63,7 +63,6 @@
                     ?>
                 </ul>
                 <a class="btn btn-default navbar-btn" href="order.php">Your Order</a>
-                <a class="btn btn-default navbar-btn" href="destroy.php">Session Destroy</a>
             </div>
         </div>
     

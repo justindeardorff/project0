@@ -8,20 +8,62 @@
     //if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        //cast qty parameter as int.  Invalid values convert to 0, all others to int value
-        $qtyint=intval($_POST["qty"]);
-        
-        //make sure posted qty is valid, non-zero,non-negative number, still checking the original string to make sure it was numeric
-        if($_POST["qty"] == '' OR $_POST["qty"]<1 OR is_numeric($_POST["qty"])==FALSE)
+
+        if(isset($_POST["cartaction"]))  //check to see if it's a qty update request
         {
-           render("apology.php", ["message" => "Please enter a valid quantity"]);
-        } 
-        else if($_POST["item"]=='') //check to make sure the item name is non-null
-        {
-           render("apology.php", ["message" => "Please select a valid item"]);
+            $itemnum=$_POST["itemnumber"];
+            
+            if($_POST["cartaction"]=="update")
+            {
+                
+                //use the item num to adjust the qty and subtotal of the item
+                $_SESSION["cart"][$itemnum]["qty"]=$_POST["qty"];
+                $_SESSION["cart"][$itemnum]["subtotal"]=$_SESSION["cart"][$itemnum]["price"]*intval($_POST["qty"]);
+                
+                $message="Quantity updated";    
+                render("orderview.php", ["xml"=>$xml, "message"=>$message]);
+                          
+            }
+            else if($_POST["cartaction"]=="remove")
+            {
+                $count=0;
+                //cycle through entire cart again and when you get to the itemnum to remove, just don't add it
+                foreach($_SESSION['cart'] as $cart_item)
+                {
+                    if($count!=$itemnum)
+                    {
+                         $cart[]=array('category'=>$_SESSION["cart"][$count]["category"],
+                              		 'itemname'=>$_SESSION["cart"][$count]["itemname"], 
+                              		 'size' =>$_SESSION["cart"][$count]["size"],
+                              		 'qty'=>$_SESSION["cart"][$count]["qty"],
+                              		 'price'=>$_SESSION["cart"][$count]["price"],
+                              		 'sauce'=>$_SESSION["cart"][$count]["sauce"],
+                              		 'xcheese'=>$_SESSION["cart"][$count]["xcheese"],
+                              		 'subtotal'=>$_SESSION["cart"][$count]["subtotal"]);
+                    }
+                    $count++;
+                }
+                
+                //set SESSION['cart'] = to new cart
+                $_SESSION["cart"]=$cart;
+                
+                $message="Item Successfully Removed";
+                
+                render("orderview.php", ["xml"=>$xml, "message"=>$message]);
+                
+            }
+            
+   
         }
         else //values seem valid, evaluate session and store
         {
+        
+            if($_POST["qty"] == '' OR $_POST["qty"]<1 OR is_numeric($_POST["qty"])==FALSE)
+            {
+               render("orderview.php", ["message" => "Please enter a valid quantity"]);
+            } 
+            
+            $qtyint=intval($_POST["qty"]);
         
             //convert price to remove $ sign
             $floatprice=getprice($_POST["price"]);
@@ -90,7 +132,8 @@
                               		 'price'=>$new_item[0]["price"],
                               		 'sauce'=>$new_item[0]["sauce"],
                               		 'xcheese'=>$new_item[0]["xcheese"],
-                              		 'subtotal'=>$floatprice * $cart_item["qty"]);
+                              		 'subtotal'=>$floatprice * ($cart_item["qty"] + $new_item[0]["qty"]));
+                              		 
                         
                         $match=true; //update match var to true
                         
@@ -135,7 +178,7 @@
            }
            else
            {
-                $message="the cart is set";
+                $message="Your Current Order";
                 render("orderview.php", ["xml"=>$xml, "message"=>$message]);
                 
            }
