@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
     /*
     *  Three Aces Pizza Site
     *  CS75 Project 0
@@ -62,7 +62,8 @@
                     } 
                     ?>
                 </ul>
-                <button type="button" class="btn btn-default navbar-btn">Your Order</button>
+                <a class="btn btn-default navbar-btn" href="order.php">Your Order</a>
+                <a class="btn btn-default navbar-btn" href="destroy.php">Session Destroy</a>
             </div>
         </div>
     

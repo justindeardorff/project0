@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
     //*
     // CS75 Project 0 - PizzaML
     //  Justin Deardorff
