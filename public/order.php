@@ -79,6 +79,8 @@
             {
                 //if it's not set, let's just save the item as the first item in session
                 //this makes the new product to add to the cart from your post params
+                //cart item add and update implementation inspired by github user pwdd 
+                //https://github.com/pwdd/pizzaml
                 $_SESSION['cart'] = array
                 (
                   
